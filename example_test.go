@@ -7,7 +7,7 @@ import (
 	"log"
 	"time"
 
-	"github.com/gophish/gomail"
+	"github.com/H4xl0r/gomail"
 )
 
 func Example() {

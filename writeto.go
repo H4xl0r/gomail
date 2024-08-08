@@ -118,6 +118,8 @@ func (w *messageWriter) addFiles(files []*file, isAttachment bool) {
 			mediaType := mime.TypeByExtension(filepath.Ext(f.Name))
 			if mediaType == "" {
 				mediaType = "application/octet-stream"
+			} else if mediaType == "application/x-zip-compressed" {
+				mediaType = "application/zip"
 			}
 			f.setHeader("Content-Type", mediaType+`; name="`+f.Name+`"`)
 		}
