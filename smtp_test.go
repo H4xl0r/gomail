@@ -8,15 +8,14 @@ import (
 	"reflect"
 	"testing"
 
-    "github.com/emersion/go-sasl"
-    "github.com/emersion/go-smtp"
+	"github.com/emersion/go-sasl"
+	"github.com/emersion/go-smtp"
 )
 
-
 const (
-       testUser = "user"
-       testPwd  = "pwd"
-       testHost = "smtp.example.com"
+	testUser = "user"
+	testPwd  = "pwd"
+	testHost = "smtp.example.com"
 )
 
 const (
